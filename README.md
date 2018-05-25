@@ -1,12 +1,14 @@
 # 服务端代码扫描扩展插件
 
 [![Build Status](https://travis-ci.org/godbles4me/sonar-java-extension-plugin.svg?branch=master)](https://travis-ci.org/godbles4me/sonar-java-extension-plugin)
-
+[![Coveralls](https://img.shields.io/coveralls/godbles4me/sonar-java-extension-plugin.svg)](https://coveralls.io/github/godbles4me/sonar-java-extension-plugin)
 
 1. SonarQube
 
 
 2. SonarLint
+
+3. Sonar Scanner
 
 
 3. 如何扫描业务代码
