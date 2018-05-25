@@ -11,5 +11,7 @@ script:
 
 # 编译成功后触发
 after_success:
-  -
+  - mvn clean test
+  - mvn jacoco:report
+  - mvn coveralls:report
 

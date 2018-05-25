@@ -120,6 +120,18 @@
                     <sonarQubeMinVersion>5.6</sonarQubeMinVersion>
                 </configuration>
             </plugin>
+            <!-- 生成测试报告 -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.1</version>
+            </plugin>
+            <!-- 统计测试覆盖率 -->
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -130,6 +142,8 @@
                 </configuration>
             </plugin>
         </plugins>
+
+
     </build>
 
 
