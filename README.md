@@ -1,6 +1,6 @@
 # 服务端代码扫描扩展插件
 
-[![Build Status](https://travis-ci.org/daniellea/sonar-java-extension-plugin.svg?branch=master)](https://travis-ci.org/daniellea/sonar-java-extension-plugin)
+[![Build Status](https://travis-ci.org/godbles4me/sonar-java-extension-plugin.svg?branch=master)](https://travis-ci.org/godbles4me/sonar-java-extension-plugin)
 
 
 1. SonarQube
