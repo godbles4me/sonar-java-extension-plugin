@@ -88,7 +88,7 @@
 
 
     <build>
-        <finalName>${project.name}-${project.version}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
 
         <plugins>
             <plugin>
@@ -127,7 +127,7 @@
                 <role>developer</role>
             </roles>
             <email>limiaofei@difengshanguo.com</email>
-            <organization>Difeng Inc.</organization>
+            <organization>Difeng Shushan-inc.com</organization>
         </developer>
     </developers>
 
