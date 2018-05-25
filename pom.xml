@@ -11,7 +11,17 @@
     <!-- 以sonar插件形式打包 -->
     <name>sonar-java-extension-plugin</name>
     <description>Java Code Rules of Difeng Inc.</description>
-
+    <inceptionYear>2018</inceptionYear>
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <organization>
+        <name>Difeng</name>
+        <url>http://www.difeng.com</url>
+    </organization>
 
     <dependencies>
         <dependency>
@@ -91,6 +101,7 @@
         <finalName>${project.artifactId}-${project.version}</finalName>
 
         <plugins>
+            <!-- Sonar打包插件 -->
             <plugin>
                 <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
                 <artifactId>sonar-packaging-maven-plugin</artifactId>
@@ -99,6 +110,9 @@
                 <configuration>
                     <pluginKey>java-extension-plugin</pluginKey>
                     <pluginName>Sonar Java Extension Rules Plugin</pluginName>
+                    <pluginDescription>Java Code Rules for Difeng-inc</pluginDescription>
+                    <pluginSourcesUrl>https://github.com/godbles4me/sonar-java-extension-plugin</pluginSourcesUrl>
+                    <!-- 插件启动默认读取的入口类 -->
                     <pluginClass>com.df.common.sonar.extension.CodeRulesPlugin</pluginClass>
                     <!-- 支持sonar lint(即时反馈) -->
                     <sonarLintSupported>true</sonarLintSupported>
