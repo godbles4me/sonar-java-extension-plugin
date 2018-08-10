@@ -13,19 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.df.common.sonar.extension.rules.structure;
+package com.df.common.sonar.extension.rules.maven;
 
-import org.sonar.plugins.java.api.JavaFileScanner;
-import org.sonar.plugins.java.api.JavaFileScannerContext;
+import org.sonar.java.xml.maven.PomCheck;
+import org.sonar.java.xml.maven.PomCheckContext;
 import org.sonar.plugins.java.api.tree.BaseTreeVisitor;
 
-public class DomainModelRule extends BaseTreeVisitor implements JavaFileScanner {
+/**
+ * <p><em>Spring Boot</em>版本号规则. 建议版本号1.5.13.RELEASE</p>
+ *
+ * @author Daniel Lea
+ * @date 2018/5/25
+ */
+public class SpringBootVersionRangeRule extends BaseTreeVisitor implements PomCheck {
 
-    private JavaFileScannerContext context;
 
     @Override
-    public void scanFile(final JavaFileScannerContext context) {
-        this.context = context;
-        this.scan(context.getTree());
+    public void scanFile(PomCheckContext context) {
+
     }
 }

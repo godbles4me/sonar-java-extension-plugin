@@ -23,6 +23,7 @@
         <url>http://www.difeng.com</url>
     </organization>
 
+
     <dependencies>
         <dependency>
             <groupId>org.sonarsource.sonarqube</groupId>

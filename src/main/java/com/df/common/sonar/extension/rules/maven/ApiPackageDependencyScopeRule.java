@@ -13,10 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.df.common.sonar.extension.rules.maven;
+
+import org.sonar.java.xml.maven.PomCheck;
+import org.sonar.java.xml.maven.PomCheckContext;
 
 /**
- * 该包下校验规则适用本公司内部.
+ * <p>二方库 </p>
  *
  * @author Daniel Lea
+ * @date 2018/5/25
  */
-package com.df.common.sonar.extension.rules.internal;
+public class ApiPackageDependencyScopeRule implements PomCheck {
+
+    private PomCheckContext context;
+
+    @Override
+    public void scanFile(PomCheckContext context) {
+        this.context = context;
+
+    }
+}
